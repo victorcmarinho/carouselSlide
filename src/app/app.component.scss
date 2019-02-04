@@ -1,0 +1,82 @@
+.slideshow-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;  
+    grid-template-columns: minmax(auto,400px);
+    background-color: #fff;
+    padding: 16px 16px 0 16px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16);
+    position: relative;
+    /*
+        include mobile-only
+        img {
+            display: none;
+            max-width: 100%;
+            height: 328px;
+            width: auto;
+        }
+
+        include tablet-only
+        img {
+            display: none;
+            max-width: 100%;
+            height: 328px;
+            width: auto;
+        }
+
+        include desktop-only
+        img {
+            display: none;
+            max-width: 100%;
+            height: 324px;
+            width: auto;
+        }
+
+    */
+    img {
+        display: none;
+        max-width: 100%;
+        height: 328px;
+        width: auto;
+        margin-bottom: 16px;
+    }
+    .active {
+        display: block;
+    }
+   
+    .tabs-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
+        background-color: rgba(0, 0, 0, 0.21);
+        .linebar {
+            height: 4px;
+            width: 100%;
+            transition: background-color 0.6s ease;
+        }
+        .active {
+            background-color: #007DCC !important;
+        }
+    }
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }

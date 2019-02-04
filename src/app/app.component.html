@@ -1,0 +1,21 @@
+<pre>
+  previousSlideIndex: {{getPreviousSlide()}}
+  Controle activeSlide: {{activeSlide}}
+  nextSlideIndex: {{getNextSlide()}}    
+</pre>
+
+<div class="slideshow-container">
+
+  <div class="image-show">
+    <ng-container *ngFor="let image of images; index as i; trackBy: trackByFn ">
+      <img [src]="image" *ngIf="activeSlide === i && lazyLoad" [ngClass]="activeSlide === i ? 'active':''">
+    </ng-container>
+  </div>
+  <div class="tabs-container" *ngIf="showLineBars">
+    <span [ngClass]="activeSlide === i ? ' linebar active':'linebar'" *ngFor="let image of images; index as i; trackBy: trackByFn"></span>
+  </div>
+
+</div>
+
+<button (click)="onClickLast()">Preview</button>
+<button (click)="onClickNext()">Next</button>
