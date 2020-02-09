@@ -1,5 +1,5 @@
 # Carousel
-
+Projeto de como criar um Carousel com angular 7, para passar imagens.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
 ## Development server
