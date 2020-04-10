@@ -9,13 +9,13 @@ import { CorouselService } from './corousel.service';
 export class AppComponent implements OnInit, DoCheck, AfterViewInit  {
 
   title = 'carousel';
-  imageT ="https://www.idealmarketing.com.br/blog/wp-content/uploads/2018/02/produto.png"
+  imageT ="https://github.com/victorcmarinho/carouselSlide/blob/master/src/assets/produto.png?raw=true"
   images: string[] = [
-    "https://www.idealmarketing.com.br/blog/wp-content/uploads/2018/02/produto.png",
-    "https://i1.wp.com/gamelogia.com.br/wp-content/uploads/2016/11/gamer.jpg?resize=1280%2C640",
-    "http://s.glbimg.com/jo/g1/f/original/2016/05/02/palestinian-gaza-daily_life_mohammed_abed_afp.jpg",
-    "https://pbs.twimg.com/profile_images/711520911082569728/CZvvAEVD.jpg",
-    "https://kanto.legiaodosherois.com.br/w750-h393-gnw-cfill-q80/wp-content/uploads/2018/07/legiao_eGfvrLzQju4i5FNEBc27D8RTbVY9Ug6nwCIkoZxHm_.jpg.jpeg"
+    "https://github.com/victorcmarinho/carouselSlide/blob/master/src/assets/produto.png?raw=true",
+    "https://github.com/victorcmarinho/carouselSlide/blob/master/src/assets/gamer.jpg?raw=true",
+    "https://github.com/victorcmarinho/carouselSlide/blob/master/src/assets/tree.jpg?raw=true",
+    "https://github.com/victorcmarinho/carouselSlide/blob/master/src/assets/venom.jpeg?raw=true",
+    "https://github.com/victorcmarinho/carouselSlide/blob/master/src/assets/wolf.jpg?raw=true"
   ];
   private _autoplayIntervalId: any;
   @Input() autoPlay: boolean = true;
