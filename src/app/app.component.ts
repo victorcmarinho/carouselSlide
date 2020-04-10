@@ -96,7 +96,6 @@ export class AppComponent implements OnInit, DoCheck, AfterViewInit  {
     } else if(!this._autoplayIntervalId){
       this._ngZone.runOutsideAngular(() => {
         this._autoplayIntervalId = setInterval(() => {
-          if(true){} // if de esperar a imagem carregar
           this._ngZone.run(() => this.nextImage());
         }, this.autoPlayInterval);
       });
